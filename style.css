@@ -1,0 +1,813 @@
+body{
+    height: 100vh;
+    overflow: hidden;
+    background-color: #000;
+}
+main{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+ }
+    main::before {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        -webkit-animation: color-switch 20s cubic-bezier(0.3, 0,0.7, 1) both infinite;
+        animation: color-switch 20s cubic-bezier(0.3, 0,0.7, 1) both infinite;
+        mix-blend-mode: screen;       
+}
+main .star-wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+main .star-wrapper .star {
+    --hue: 0;
+    --brightness:80%;
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    border-radius: 2px;
+    background-color: hsl(var(--hue), 10%, var(--brightness));
+}
+main .star-wrapper .star:nth-child(1) {
+    top: 22.9529752131%;
+    left: 2.3256600392%;
+    --hue: 38.7408461155deg;
+    --brightness: 59.3195781509%;
+}
+main .star-wrapper .star:nth-child(2){
+    top: 38.6242904164%;
+    left: 25.0427409618%;
+    --hue: 35.1289226538deg;
+    --brightness: 21.8965011689%;
+} 
+main .star-wrapper .star:nth-child(3) {
+    top: 6.3221769051%;
+    left: 63.2635810192%;
+    --hue: 71.3727455573deg;
+    --brightness: 52.4123131415%
+}
+
+    main .star-wrapper .star:nth-child(4) {
+        top: 53.8212568608%;
+        left: 9.6512790666%;
+        --hue: 18.6146425886deg;
+        --brightness: 36.2340031491%;
+}
+    main .star-wrapper .star:nth-child(5) {
+        top: 50.8013148589%;
+        left: 84.6398526116%;
+        --hue: 178.0869258216deg;
+        --brightness: 55.5068544714%;
+    }
+    main .star-wrapper .star:nth-child(6) {
+        top: 47.7211904375%;
+        left: 70.6829165212%;
+        --hue: 58.4058052641deg;
+        --brightness: 52.561901758%;
+      }
+      main .star-wrapper .star:nth-child(7) {
+        top: 12.0645156043%;
+        left: 4.7102513707%;
+        --hue: 46.2892282426deg;
+        --brightness: 42.3951028714%;
+      }
+      main .star-wrapper .star:nth-child(8) {
+        top: 48.0753051729%;
+        left: 60.691727132%;
+        --hue: 83.0389533431deg;
+        --brightness: 23.1474489801%;
+      }
+      main .star-wrapper .star:nth-child(9) {
+        top: 47.5330458299%;
+        left: 37.8998575002%;
+        --hue: 130.6989498269deg;
+        --brightness: 21.7925505244%;
+      }
+      main .star-wrapper .star:nth-child(10) {
+        top: 26.468006365%;
+        left: 74.5648675753%;
+        --hue: 320.2055934662deg;
+        --brightness: 38.6883794296%;
+      }
+      main .star-wrapper .star:nth-child(11) {
+        top: 46.9598147393%;
+        left: 92.5240364772%;
+        --hue: 106.7868892693deg;
+        --brightness: 68.0717443199%;
+      }
+      main .star-wrapper .star:nth-child(12) {
+        top: 70.4588039206%;
+        left: 86.5562914457%;
+        --hue: 310.6121080839deg;
+        --brightness: 43.5448900914%;
+      }
+      main .star-wrapper .star:nth-child(13) {
+        top: 34.2986703815%;
+        left: 69.787245946%;
+        --hue: 15.1362820891deg;
+        --brightness: 41.483012984%;
+      }
+      main .star-wrapper .star:nth-child(14) {
+        top: 4.7498764243%;
+        left: 44.8623296212%;
+        --hue: 155.0699643489deg;
+        --brightness: 35.7543953182%;
+      }
+      main .star-wrapper .star:nth-child(15) {
+        top: 54.0598763714%;
+        left: 2.0999457397%;
+        --hue: 124.7068337539deg;
+        --brightness: 30.3812912265%;
+      }
+      main .star-wrapper .star:nth-child(16) {
+        top: 8.5941676477%;
+        left: 20.0408350046%;
+        --hue: 65.7223626133deg;
+        --brightness: 36.1106499262%;
+      }
+      main .star-wrapper .star:nth-child(17) {
+        top: 48.7886072944%;
+        left: 86.2364768251%;
+        --hue: 223.6213980643deg;
+        --brightness: 53.5557983647%;
+      }
+      main .star-wrapper .star:nth-child(18) {
+        top: 63.5949188347%;
+        left: 0.606813961%;
+        --hue: 112.5144174202deg;
+        --brightness: 45.4853518747%;
+      }
+      main .star-wrapper .star:nth-child(19) {
+        top: 32.0818356352%;
+        left: 59.5282578402%;
+        --hue: 76.3504736963deg;
+        --brightness: 52.3608501229%;
+      }
+      main .star-wrapper .star:nth-child(20) {
+        top: 1.1917818493%;
+        left: 31.1754696973%;
+        --hue: 110.7436898738deg;
+        --brightness: 28.5305617225%;
+      }
+      main .star-wrapper .star:nth-child(21) {
+        top: 63.8313228721%;
+        left: 31.4220036804%;
+        --hue: 219.6137567017deg;
+        --brightness: 61.0735303265%;
+      }
+      main .star-wrapper .star:nth-child(22) {
+        top: 19.0245257618%;
+        left: 52.2217331815%;
+        --hue: 224.4300913715deg;
+        --brightness: 14.9115685801%;
+      }
+      main .star-wrapper .star:nth-child(23) {
+        top: 78.549968771%;
+        left: 80.7961936194%;
+        --hue: 230.2539815078deg;
+        --brightness: 25.1975978279%;
+      }
+      main .star-wrapper .star:nth-child(24) {
+        top: 82.5419571457%;
+        left: 37.6432427349%;
+        --hue: 27.7707994444deg;
+        --brightness: 64.6502084311%;
+      }
+      main .star-wrapper .star:nth-child(25) {
+        top: 19.9097701213%;
+        left: 77.4447501014%;
+        --hue: 314.1736294785deg;
+        --brightness: 44.3241468262%;
+      }
+      main .star-wrapper .star:nth-child(26) {
+        top: 91.4508762096%;
+        left: 51.4684934745%;
+        --hue: 54.6461810008deg;
+        --brightness: 18.863252424%;
+      }
+      main .star-wrapper .star:nth-child(27) {
+        top: 28.8230247309%;
+        left: 71.1826271734%;
+        --hue: 234.2460829835deg;
+        --brightness: 68.1902521364%;
+      }
+      main .star-wrapper .star:nth-child(28) {
+        top: 50.5028560253%;
+        left: 56.8013698534%;
+        --hue: 214.4356383986deg;
+        --brightness: 22.3523467117%;
+      }
+      main .star-wrapper .star:nth-child(29) {
+        top: 13.7350113655%;
+        left: 4.4100075521%;
+        --hue: 224.6027634756deg;
+        --brightness: 24.7169136875%;
+      }
+      main .star-wrapper .star:nth-child(30) {
+        top: 94.2811740211%;
+        left: 85.6483705693%;
+        --hue: 70.501846562deg;
+        --brightness: 22.3157587067%;
+      }
+      main .star-wrapper .star:nth-child(31) {
+        top: 89.0095943861%;
+        left: 46.8899687577%;
+        --hue: 50.1300882544deg;
+        --brightness: 35.911521012%;
+      }
+      main .star-wrapper .star:nth-child(32) {
+        top: 70.1152066901%;
+        left: 14.4012167927%;
+        --hue: 302.5244344145deg;
+        --brightness: 27.0229344265%;
+      }
+      main .star-wrapper .star:nth-child(33) {
+        top: 2.2521328171%;
+        left: 23.0638349139%;
+        --hue: 267.2705198643deg;
+        --brightness: 45.7936223709%;
+      }
+      main .star-wrapper .star:nth-child(34) {
+        top: 77.8787829571%;
+        left: 70.7562566812%;
+        --hue: 245.1272904418deg;
+        --brightness: 19.4887056311%;
+      }
+      main .star-wrapper .star:nth-child(35) {
+        top: 97.3699449768%;
+        left: 81.55286301%;
+        --hue: 260.5707506663deg;
+        --brightness: 20.257327025%;
+      }
+      main .star-wrapper .star:nth-child(36) {
+        top: 55.2501157846%;
+        left: 52.1618223867%;
+        --hue: 82.3972119004deg;
+        --brightness: 14.7701454331%;
+      }
+      main .star-wrapper .star:nth-child(37) {
+        top: 88.0199390802%;
+        left: 5.9146544183%;
+        --hue: 75.8517919392deg;
+        --brightness: 65.9530389059%;
+      }
+      main .star-wrapper .star:nth-child(38) {
+        top: 5.7022765166%;
+        left: 49.6987421982%;
+        --hue: 269.7686779901deg;
+        --brightness: 23.4531663042%;
+      }
+      main .star-wrapper .star:nth-child(39) {
+        top: 80.9281302337%;
+        left: 66.5116794445%;
+        --hue: 14.0115347798deg;
+        --brightness: 20.8338610141%;
+      }
+      main .star-wrapper .star:nth-child(40) {
+        top: 55.695626751%;
+        left: 16.7372329048%;
+        --hue: 142.0895185225deg;
+        --brightness: 29.8304589271%;
+      }
+      main .star-wrapper .star:nth-child(41) {
+        top: 39.9289708641%;
+        left: 95.9200232671%;
+        --hue: 222.545287567deg;
+        --brightness: 17.1538338054%;
+      }
+      main .star-wrapper .star:nth-child(42) {
+        top: 65.0019859367%;
+        left: 89.705342336%;
+        --hue: 0.1397866518deg;
+        --brightness: 67.6397280484%;
+      }
+      main .star-wrapper .star:nth-child(43) {
+        top: 69.0027633609%;
+        left: 28.7449332893%;
+        --hue: 211.1243291128deg;
+        --brightness: 61.6929841944%;
+      }
+      main .star-wrapper .star:nth-child(44) {
+        top: 84.782444374%;
+        left: 56.9711476846%;
+        --hue: 233.6196727777deg;
+        --brightness: 51.3230814705%;
+      }
+      main .star-wrapper .star:nth-child(45) {
+        top: 72.811079017%;
+        left: 42.3970557709%;
+        --hue: 184.4087506136deg;
+        --brightness: 15.6249640229%;
+      }
+      main .star-wrapper .star:nth-child(46) {
+        top: 61.6052176368%;
+        left: 39.325918498%;
+        --hue: 345.1184627426deg;
+        --brightness: 43.7922001418%;
+      }
+      main .star-wrapper .star:nth-child(47) {
+        top: 68.6107100735%;
+        left: 73.3429571517%;
+        --hue: 343.5462087669deg;
+        --brightness: 29.2759069155%;
+      }
+      main .star-wrapper .star:nth-child(48) {
+        top: 50.5436497339%;
+        left: 37.6944702331%;
+        --hue: 326.5307966325deg;
+        --brightness: 56.2337110116%;
+      }
+      main .star-wrapper .star:nth-child(49) {
+        top: 28.9047820995%;
+        left: 9.7421500195%;
+        --hue: 132.7807213836deg;
+        --brightness: 37.8455795441%;
+      }
+      main .star-wrapper .star:nth-child(50) {
+        top: 91.2017293795%;
+        left: 62.0244361962%;
+        --hue: 268.7008574182deg;
+        --brightness: 30.0011572024%;
+      }
+      main .star-wrapper .star:nth-child(51) {
+        top: 3.5604323322%;
+        left: 23.5582266983%;
+        --hue: 200.6199961127deg;
+        --brightness: 13.6669927071%;
+      }
+      main .star-wrapper .star:nth-child(52) {
+        top: 76.2060957705%;
+        left: 68.1764181412%;
+        --hue: 52.3608520199deg;
+        --brightness: 68.3597000699%;
+      }
+      main .star-wrapper .star:nth-child(53) {
+        top: 58.5984624556%;
+        left: 17.8830262391%;
+        --hue: 210.930469633deg;
+        --brightness: 61.7887239011%;
+      }
+      main .star-wrapper .star:nth-child(54) {
+        top: 85.0237157957%;
+        left: 44.3405345009%;
+        --hue: 6.0543110879deg;
+        --brightness: 26.2753524091%;
+      }
+      main .star-wrapper .star:nth-child(55) {
+        top: 3.6186537467%;
+        left: 94.997765924%;
+        --hue: 6.3429735316deg;
+        --brightness: 14.8315445477%;
+      }
+      main .star-wrapper .star:nth-child(56) {
+        top: 82.4865033677%;
+        left: 82.8606831911%;
+        --hue: 335.2215605969deg;
+        --brightness: 50.6992069258%;
+      }
+      main .star-wrapper .star:nth-child(57) {
+        top: 92.1943485348%;
+        left: 34.0495878825%;
+        --hue: 107.7808556681deg;
+        --brightness: 52.8204203371%;
+      }
+      main .star-wrapper .star:nth-child(58) {
+        top: 93.0079026507%;
+        left: 33.2517945356%;
+        --hue: 67.0799695399deg;
+        --brightness: 67.2022811715%;
+      }
+      main .star-wrapper .star:nth-child(59) {
+        top: 1.6773233415%;
+        left: 43.4895480274%;
+        --hue: 26.1478675477deg;
+        --brightness: 28.6177720866%;
+      }
+      main .star-wrapper .star:nth-child(60) {
+        top: 23.0520430985%;
+        left: 11.0329928673%;
+        --hue: 220.6551962064deg;
+        --brightness: 48.3830199505%;
+      }
+      main .star-wrapper .star:nth-child(61) {
+        top: 79.4093134418%;
+        left: 9.3080546223%;
+        --hue: 230.3319953768deg;
+        --brightness: 46.6023122578%;
+      }
+      main .star-wrapper .star:nth-child(62) {
+        top: 18.7602682916%;
+        left: 25.1147436827%;
+        --hue: 207.2808503461deg;
+        --brightness: 20.4475331235%;
+      }
+      main .star-wrapper .star:nth-child(63) {
+        top: 86.809500271%;
+        left: 90.2769890871%;
+        --hue: 60.5735523219deg;
+        --brightness: 53.6851200765%;
+      }
+      main .star-wrapper .star:nth-child(64) {
+        top: 59.3601275865%;
+        left: 29.1653523921%;
+        --hue: 124.2287429666deg;
+        --brightness: 13.5276063705%;
+      }
+      main .star-wrapper .star:nth-child(65) {
+        top: 15.6706691954%;
+        left: 61.4907576315%;
+        --hue: 83.2624006333deg;
+        --brightness: 39.1598023347%;
+      }
+      main .star-wrapper .star:nth-child(66) {
+        top: 74.8808193836%;
+        left: 46.1033064903%;
+        --hue: 265.6103378546deg;
+        --brightness: 35.720801261%;
+      }
+      main .star-wrapper .star:nth-child(67) {
+        top: 36.4972129339%;
+        left: 43.1424488113%;
+        --hue: 221.9625241502deg;
+        --brightness: 24.2479358452%;
+      }
+      main .star-wrapper .star:nth-child(68) {
+        top: 4.1989200937%;
+        left: 12.7679628269%;
+        --hue: 72.4072022146deg;
+        --brightness: 38.5621958801%;
+      }
+      main .star-wrapper .star:nth-child(69) {
+        top: 53.2865752964%;
+        left: 32.6203864196%;
+        --hue: 89.8909045061deg;
+        --brightness: 14.0334092832%;
+      }
+      main .star-wrapper .star:nth-child(70) {
+        top: 3.4867811257%;
+        left: 5.895933244%;
+        --hue: 14.413764401deg;
+        --brightness: 21.6055622512%;
+      }
+      main .star-wrapper .star:nth-child(71) {
+        top: 16.6968104883%;
+        left: 59.5306384075%;
+        --hue: 151.4497024697deg;
+        --brightness: 68.9744665553%;
+      }
+      main .star-wrapper .star:nth-child(72) {
+        top: 77.333209062%;
+        left: 60.0450682357%;
+        --hue: 84.5122165057deg;
+        --brightness: 41.2680635073%;
+      }
+      main .star-wrapper .star:nth-child(73) {
+        top: 3.2981791772%;
+        left: 79.0562593809%;
+        --hue: 188.3142591979deg;
+        --brightness: 51.7717575383%;
+      }
+      main .star-wrapper .star:nth-child(74) {
+        top: 60.5115622991%;
+        left: 73.5580984623%;
+        --hue: 83.1185724517deg;
+        --brightness: 17.0930166102%;
+      }
+      main .star-wrapper .star:nth-child(75) {
+        top: 50.5924605759%;
+        left: 3.4076429906%;
+        --hue: 93.6069400814deg;
+        --brightness: 30.7544975722%;
+      }
+      main .star-wrapper .star:nth-child(76) {
+        top: 80.8073130317%;
+        left: 13.2156283719%;
+        --hue: 335.7074263546deg;
+        --brightness: 55.9996631886%;
+      }
+      main .star-wrapper .star:nth-child(77) {
+        top: 39.3605698316%;
+        left: 37.558209796%;
+        --hue: 233.2022221889deg;
+        --brightness: 56.9277719536%;
+      }
+      main .star-wrapper .star:nth-child(78) {
+        top: 4.5859394636%;
+        left: 44.7154643568%;
+        --hue: 190.1181505356deg;
+        --brightness: 15.8604473327%;
+      }
+      main .star-wrapper .star:nth-child(79) {
+        top: 90.5193607129%;
+        left: 93.8568454425%;
+        --hue: 246.7822288826deg;
+        --brightness: 47.5984191702%;
+      }
+      main .star-wrapper .star:nth-child(80) {
+        top: 64.3398435388%;
+        left: 48.8910837811%;
+        --hue: 339.9350233636deg;
+        --brightness: 54.9827637756%;
+      }
+      main .star-wrapper .star:nth-child(81) {
+        top: 52.482259148%;
+        left: 55.797362962%;
+        --hue: 240.3841481804deg;
+        --brightness: 26.8086556596%;
+      }
+      main .star-wrapper .star:nth-child(82) {
+        top: 88.6134396885%;
+        left: 36.6140508617%;
+        --hue: 306.4578037524deg;
+        --brightness: 52.9716291389%;
+      }
+      main .star-wrapper .star:nth-child(83) {
+        top: 11.7218546931%;
+        left: 62.2394994612%;
+        --hue: 83.632509926deg;
+        --brightness: 46.5395992937%;
+      }
+      main .star-wrapper .star:nth-child(84) {
+        top: 47.6937794888%;
+        left: 2.9059964265%;
+        --hue: 105.3088138226deg;
+        --brightness: 33.6999642257%;
+      }
+      main .star-wrapper .star:nth-child(85) {
+        top: 62.8127743522%;
+        left: 92.8096131014%;
+        --hue: 253.1881702657deg;
+        --brightness: 60.9667098777%;
+      }
+      main .star-wrapper .star:nth-child(86) {
+        top: 46.9358028784%;
+        left: 25.2290584884%;
+        --hue: 42.1299996861deg;
+        --brightness: 68.6903284968%;
+      }
+      main .star-wrapper .star:nth-child(87) {
+        top: 90.0694843118%;
+        left: 88.268608444%;
+        --hue: 235.7403643245deg;
+        --brightness: 60.3050343961%;
+      }
+      main .star-wrapper .star:nth-child(88) {
+        top: 59.5112139006%;
+        left: 85.3717924182%;
+        --hue: 197.5716263439deg;
+        --brightness: 30.4207412511%;
+      }
+      main .star-wrapper .star:nth-child(89) {
+        top: 4.3801792881%;
+        left: 69.0079404218%;
+        --hue: 210.5491667866deg;
+        --brightness: 54.0937895662%;
+      }
+      main .star-wrapper .star:nth-child(90) {
+        top: 4.3100635887%;
+        left: 25.2449463267%;
+        --hue: 114.9028774171deg;
+        --brightness: 29.9300522761%;
+      }
+      main .star-wrapper .star:nth-child(91) {
+        top: 55.1048286511%;
+        left: 61.1528554942%;
+        --hue: 297.2851364845deg;
+        --brightness: 27.25638884%;
+      }
+      main .star-wrapper .star:nth-child(92) {
+        top: 40.7779464679%;
+        left: 26.8289257428%;
+        --hue: 255.3739184876deg;
+        --brightness: 15.9361999592%;
+      }
+      main .star-wrapper .star:nth-child(93) {
+        top: 86.6093537586%;
+        left: 79.7977704167%;
+        --hue: 163.4191159149deg;
+        --brightness: 50.9489924123%;
+      }
+      main .star-wrapper .star:nth-child(94) {
+        top: 63.3289561773%;
+        left: 67.7486422332%;
+        --hue: 42.3023014614deg;
+        --brightness: 39.8713240409%;
+      }
+      main .star-wrapper .star:nth-child(95) {
+        top: 51.1504826876%;
+        left: 15.0144866855%;
+        --hue: 37.0786748246deg;
+        --brightness: 26.5115247551%;
+      }
+      main .star-wrapper .star:nth-child(96) {
+        top: 30.2016751326%;
+        left: 73.3394981312%;
+        --hue: 125.3898247695deg;
+        --brightness: 13.9547773346%;
+      }
+      main .star-wrapper .star:nth-child(97) {
+        top: 80.9322165664%;
+        left: 77.1739730463%;
+        --hue: 193.5819988665deg;
+        --brightness: 26.9343091307%;
+      }
+      main .star-wrapper .star:nth-child(98) {
+        top: 89.5386513212%;
+        left: 27.5301854643%;
+        --hue: 190.1417173462deg;
+        --brightness: 29.2810528828%;
+      }
+      main .star-wrapper .star:nth-child(99) {
+        top: 40.1440720008%;
+        left: 70.5317323813%;
+        --hue: 132.0228579071deg;
+        --brightness: 34.2699543818%;
+      }
+      main .star-wrapper .star:nth-child(100) {
+        top: 15.7357300497%;
+        left: 29.9559884231%;
+        --hue: 71.4633752392deg;
+        --brightness: 49.1132939778%;
+      }
+
+      main .sun-wrapper {
+          --size: 50vmin;
+          width: 100%;
+          height: 100%;
+          overflow: hidden;
+          position: absolute;
+          top: 0;
+          left: 0;
+      }
+      main .sun-wrapper.blur {
+          filter: blur(3vmin);
+          mix-blend-mode: screen;
+      }
+      main .sun-wrapper .sun,
+      main .sun-wrapper .moon {
+          position: absolute;
+          width: var(--size);
+          height: var(--size);
+          border-radius: var(--size);
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+      }
+      main .sun-wrapper .sun {
+          background-color: gold;
+          -webkit-animation: flare 20s cubic-bezier(0.3, 0, 0.7, 1) both infinite;
+          animation: flare 20s cubic-bezier(0.3, 0, 0.7, 1) both infinite;
+
+      }
+ main .sun-wrapper .moon {
+     width: calc(var(--size) + 1vmin);
+     height: calc(var(--size) + 1vmin);
+     background-color: black;
+     -webkit-animation: eclipse 20s cubic-bezier(0.3, 0, 0.7, 1) both infinite;
+            animation: eclipse 20s cubic-bezier(0.3, 0, 0.7, 1)both infinite;
+    -webkit-animation-name: eclipse, reflect;
+            animation-name: eclipse, reflect;
+ }
+ @-webkit-keyframes eclipse {
+     0%{
+         transform: translate(calc(-50% + 80vw),0%);
+     }
+     50% { 
+         transform: translate(-50%, -50%);
+    }
+    100% {
+        transform: translate(calc(-50% - 80vw),-100%);
+    }
+ }
+@keyframes eclipse {
+  0% {
+    transform: translate(calc(-50% + 80vw), 0%);
+  }
+  50% {
+    transform: translate(-50%, -50%);
+  }
+  100% {
+    transform: translate(calc(-50% - 80vw),-100%);
+  }
+}
+@-webkit-keyframes flare {
+  0% {
+    box-shadow: 0px 0px 5vmin gold;
+    background-color:gold ;
+  }
+  25% {
+    box-shadow: 0px 0px 5vmin gold;
+    background-color: gold;
+  }
+  50% {
+    box-shadow: 0px 0px 10vmin orangered;
+    background-color:orangered;
+  }
+  75% {
+    box-shadow:0px 0px 5vmin gold;
+    background-color: gold;
+  }
+  100%{
+    box-shadow: 0px 0px 5vmin gold;
+    background-color: gold;
+  }
+}
+@keyframes flare {
+  0% {
+    box-shadow: 0px 0px 5vmin gold;
+    background-color: gold;
+  }
+  25% {
+    box-shadow: 0px 0px 5vmin gold;
+    background-color: gold;
+  }
+  50% {
+    box-shadow: 0px 0px 10vmin orangered;
+    background-color: orangered;
+  }
+  75% {
+    box-shadow: 0px 0px 5vmin gold;
+    background-color: gold;
+  }
+  100% {
+    box-shadow: 0px 0px 5vmin gold;
+    background-color: gold;
+  }
+}
+@-webkit-keyframes color-switch {
+  0% {
+    background-color: #002;
+  }
+  25% {
+    background-color: #002;
+  }
+  50% {
+    background-color: #001;
+  }
+  75% {
+    background-color: #002;
+  }
+  100% {
+    background-color: #002;
+  }
+}
+@keyframes color-swich {
+  0%{
+    background-color: #002;
+  }
+  25% {
+    background-color: #002;
+  }
+  50% {
+    background-color: #001;
+  }
+  75% {
+    background-color:#002 ;
+  }
+  100% {
+    background-color: #002;
+  }
+}
+@-webkit-keyframes reflect {
+  0%{
+    box-shadow: 4vmin 2vmin 4vmin -6vmin inset gold;
+  }
+  25%{
+    box-shadow: 4vmin 2vmin 4vmin -6vmin inset gold;
+  }
+  50%{
+    box-shadow: 0vmin 0vmin 4vmin 0vmin inset orangered;
+  }
+  75% {
+    box-shadow: -4vmin -2vmin 4vmin -6vmin inset gold;
+  }
+  100% {
+    box-shadow: -4vmin -2vmin 4vmin -6vmin inset gold;
+  }
+}
+@keyframes reflect {
+  0% {
+    box-shadow: 4vmin 2vmin 4vmin -6vmin inset gold;
+  }
+  25% {
+    box-shadow: 4vmin 2vmin 4vmin -6vmin inset gold;
+  }
+  50%{
+    box-shadow: 0vmin 0vmin 4vmin 0vmin inset orangered;
+  }
+  75% {
+    box-shadow: -4vmin -2vmin 4vmin -6vmin inset gold;
+  }
+  100% {
+    box-shadow: -4vmin -2vmin 4vmin -6vmin inset gold;
+  }
+}
